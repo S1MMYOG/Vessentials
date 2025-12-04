@@ -1,0 +1,61 @@
+name: Vessentials
+main: me.Vanta.Vessentials
+version: 1.0.0-Snapshot
+authors:
+  - VantaMC
+api-version: 1.21
+permission-message: You don't have permission to do that.
+commands:
+  afk:
+    description: Toggle AFK.
+    usage: /<command>
+    permission: vessentials.afk
+  vanish:
+    description: Toggle vanish.
+    usage: /<command>
+    permission: vessentials.vanish
+  sethome:
+    description: Set your home.
+    usage: /sethome
+    permission: vessentials.sethome
+  home:
+    description: Teleport to your home.
+    usage: /home
+    permission: vessentials.home
+  spawn:
+    description: Teleport to server spawn.
+    usage: /spawn
+    permission: vessentials.spawn
+  team:
+    description: Manage teams
+    usage: /team <subcommand>
+    permission: vessentials.team
+  auction:
+    description: Start an auction
+    usage: /auction <item> <price>
+    permission: vessentials.auction
+  bid:
+    description: Place a bid
+    usage: /bid <amount>
+    permission: vessentials.bid
+permissions:
+  vessentials.*:
+    description: Full access to Vessentials
+    default: op
+  vessentials.afk:
+    default: true
+  vessentials.vanish:
+    default: op
+  vessentials.sethome:
+    default: true
+  vessentials.home:
+    default: true
+  vessentials.spawn:
+    default: true
+  vessentials.team:
+    default: true
+  vessentials.auction:
+    default: true
+  vessentials.bid:
+    default: true
+

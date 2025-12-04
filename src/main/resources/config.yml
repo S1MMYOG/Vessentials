@@ -1,0 +1,62 @@
+# ================================
+# Vessentials Configuration
+# ================================
+
+# General plugin settings
+plugin:
+  name: "Vessentials"
+  version: "1.0.0"
+  debug: false   # Set to true for extra console logs
+
+# Messages shown to players
+messages:
+  prefix: "&7[&5Vessentials&7] "   # Prefix for all plugin messages
+  noPermission: "&cYou don't have permission to use this command!"
+  playerOnly: "&cThis command can only be run by players!"
+  reload: "&aConfiguration reloaded successfully."
+
+# Auction system
+auction:
+  enabled: true
+  startingPrice: 100
+  currency: "coins"
+  durationSeconds: 60
+  messages:
+    start: "&eAn auction has started for &6{item}&e at &a{price} {currency}!"
+    bid: "&b{player} bid &a{amount} {currency}&b!"
+    end: "&aAuction ended. Winner: &e{winner} &awith &6{amount} {currency}."
+
+# Teams system
+teams:
+  enabled: true
+  maxMembers: 10
+  messages:
+    join: "&aYou joined team &b{team}!"
+    leave: "&cYou left your team."
+    full: "&cThat team is full!"
+    notFound: "&cTeam not found."
+
+# AFK system
+afk:
+  enabled: true
+  timeoutMinutes: 5
+  messages:
+    afk: "&7You are now AFK."
+    return: "&aWelcome back, you are no longer AFK."
+
+# Home system
+homes:
+  enabled: true
+  maxHomes: 3
+  messages:
+    set: "&aHome &b{home}&a set successfully."
+    teleport: "&aTeleporting to home &b{home}&a..."
+    notFound: "&cHome not found."
+
+# Time manager
+time:
+  enabled: true
+  defaultWorld: "world"
+  messages:
+    day: "&eTime set to day."
+    night: "&eTime set to night."
